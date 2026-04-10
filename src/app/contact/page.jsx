@@ -1,5 +1,8 @@
 
-
+export const metadata = {
+  title: 'Contact ',
+  description: '...',
+}
 const ContactPage = () => {
     return (
         <div>
