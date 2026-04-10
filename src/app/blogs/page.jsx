@@ -1,0 +1,107 @@
+import Card from "@/components/Card";
+
+
+const BlogsPage = () => {
+    const blogs = [
+        {
+            "id": 1,
+            "title": "Getting Started with Web Development",
+            "description": "Learn the basics of HTML, CSS, and JavaScript.\nPerfect guide for beginners to start coding.",
+            "author": "Moynul Islam",
+            "date": "2026-04-01",
+            "category": "Web Development",
+            "image": "https://source.unsplash.com/600x400/?coding"
+        },
+        {
+            "id": 2,
+            "title": "Understanding JavaScript Closures",
+            "description": "Deep dive into closures with simple examples.\nImprove your JS problem-solving skills.",
+            "author": "Moynul Islam",
+            "date": "2026-04-02",
+            "category": "JavaScript",
+            "image": "https://source.unsplash.com/600x400/?javascript"
+        },
+        {
+            "id": 3,
+            "title": "React Basics for Beginners",
+            "description": "Learn components, props, and state in React.\nBuild your first React app step by step.",
+            "author": "Moynul Islam",
+            "date": "2026-04-03",
+            "category": "React",
+            "image": "https://source.unsplash.com/600x400/?reactjs"
+        },
+        {
+            "id": 4,
+            "title": "Mastering Tailwind CSS",
+            "description": "Utility-first CSS framework explained simply.\nCreate modern UI faster with Tailwind.",
+            "author": "Moynul Islam",
+            "date": "2026-04-04",
+            "category": "CSS",
+            "image": "https://source.unsplash.com/600x400/?css"
+        },
+        {
+            "id": 5,
+            "title": "Git & GitHub for Beginners",
+            "description": "Learn version control step by step.\nPush, pull, and manage your code easily.",
+            "author": "Moynul Islam",
+            "date": "2026-04-05",
+            "category": "Tools",
+            "image": "https://source.unsplash.com/600x400/?git"
+        },
+        {
+            "id": 6,
+            "title": "How APIs Work",
+            "description": "Understand APIs in simple terms.\nLearn how frontend connects with backend.",
+            "author": "Moynul Islam",
+            "date": "2026-04-06",
+            "category": "Backend",
+            "image": "https://source.unsplash.com/600x400/?api"
+        },
+        {
+            "id": 7,
+            "title": "Responsive Design Guide",
+            "description": "Make your website mobile-friendly.\nLearn media queries and flexible layouts.",
+            "author": "Moynul Islam",
+            "date": "2026-04-07",
+            "category": "Design",
+            "image": "https://source.unsplash.com/600x400/?responsive"
+        },
+        {
+            "id": 8,
+            "title": "Next.js Introduction",
+            "description": "Learn server-side rendering and routing.\nBuild fast and SEO-friendly apps.",
+            "author": "Moynul Islam",
+            "date": "2026-04-08",
+            "category": "Next.js",
+            "image": "https://source.unsplash.com/600x400/?nextjs"
+        },
+        {
+            "id": 9,
+            "title": "Debugging JavaScript Errors",
+            "description": "Find and fix bugs effectively.\nUse console and dev tools like a pro.",
+            "author": "Moynul Islam",
+            "date": "2026-04-09",
+            "category": "JavaScript",
+            "image": "https://source.unsplash.com/600x400/?debugging"
+        },
+        {
+            "id": 10,
+            "title": "Career Roadmap for Developers",
+            "description": "Step-by-step guide to becoming a developer.\nSkills, tools, and resources you need.",
+            "author": "Moynul Islam",
+            "date": "2026-04-10",
+            "category": "Career",
+            "image": "https://source.unsplash.com/600x400/?career"
+        }
+    ]
+    return (
+        <div className="p-8 space-y-10">
+            <h1 className="text-3xl text-center font-bold ">Blogs page here</h1>
+            <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {blogs.map(blog => <Card key={blog.id} blog={blog}/>)}
+            </div>
+        </div>
+    );
+};
+
+export default BlogsPage;
