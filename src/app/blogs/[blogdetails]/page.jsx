@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+
 
 const BlogDetails = async ({ params }) => {
     const blogs = [
@@ -97,7 +97,6 @@ const BlogDetails = async ({ params }) => {
     const { blogdetails } = await params;
     console.log(blogdetails);
     const targetedBlog = blogs.find(blog => blog.id === parseInt(blogdetails))
-    console.log(targetedBlog);
 
 
     return (

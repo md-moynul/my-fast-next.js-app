@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Navbar = () => {
     const links = <>
-        <li><Link href='/'>Home</Link></li>
         <li><Link href='/about'>About</Link></li>
         <li><Link href='/contact'>Contact</Link></li>
         <li><Link href='/blogs'>Blogs</Link></li>
         <li><Link href='/dashboard'>Dashboard</Link></li>
+        <li><Link href='/users'>Users</Link></li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
